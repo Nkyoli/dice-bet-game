@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100i,300,300i,400,400i|Ubuntu+Condensed&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+    width: auto;
+    margin: auto;
+    font-size: 35px;
+    background-image: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    width: 50%;
+    margin: 20px auto;
+}
+
+header h1 {
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    text-transform: uppercase;
+    color: white;
+    border: 2px solid white;
+    box-shadow: 0 5px 10px white;
+    text-shadow: 0 5px 10px #e3301e;
+    border-radius: 100px;
+    font-weight: 400;
+    font-size: 210%;
+}
+
+.sectionContent a:link,
+.sectionContent a:visited {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 0 5px 10px #e3301e;
+    box-shadow: 0 5px 10px white;
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    font-weight: 300;
+    border: 2px solid white;
+    border-radius: 100px;
+    width: 300px;
+    margin: 60px auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.sectionContent a ion-icon {
+    font-size: 120%;
+    float: left;
+}
+
+.sectionContent a:hover,
+.sectionContent a:active {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+    color: red;
+    border: 2px solid red;
+    background-color: white;
+}
+
+footer {
+    margin-top: 11%;
+}
+
+.footerContent {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    text-align: center;
+    font-size: 50%;
+    font-weight: 100;
+    color: white;
+    height: 104px;
+    width: auto;
+    background-color: rgba(255, 0, 0, 0.6);
+}
+
+.footerContentLinks {
+    float: left;
+    margin: 5px 0;
+    padding-left: 10px;
+    margin-right: 450px;
+}
+
+.footerContentSocials .linkLogo li ion-icon {
+    padding: 10px 20px;
+    font-size: 150%;
+}
+
+.linkLogo li {
+    list-style: none;
+    display: inline-block;
+}
+
+.linkLogo li a:link,
+.linkLogo li a:visited {
+    text-decoration: none;
+    color: white;
+    font-size: 80%;
+    padding: 10px 15px;
+}
+
+.linkLogo li a:hover,
+.linkLogo li a:active {
+    font-weight: 200;
+    color: #d0d0d0;
+}
+
+hr {
+    font-size: 2px;
+    color: white;
+}
+
+.cancel,
+.done {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 100px;
+    color: white;
+    width: 100px;
+    margin: 10px auto;
+    padding: 5px;
+}
+
+.cancel a,
+.done a {
+    text-decoration: none;
+    text-shadow: 0 2px 5px red;
+    text-transform: uppercase;
+    font-size: 140%;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+}
+
+.done {
+    margin-left: 40%;
+    margin-top: 7%;
+}
+.cancel {
+    margin-left: 4%;
+}
+
+.done:hover,
+.cancel:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+    border: 1px solid red;
+    background-color: white;
+}
+
+.done a:hover,
+.cancel a:hover {
+    color: red;
+}
+
+
+.settings {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 20px;
+    border: 2px solid white;
+    box-shadow: 0 10px 20px white;
+    background-image: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .9));
+    width: 400px;
+    height: 280px;
+    margin: auto;
+}
+
+.icons {
+    float: left;
+    list-style: none;
+    width: 10%;
+    padding-left: 40px;
+    font-size: 130%;
+}
+
+.values {
+    list-style: none;
+}
+
+.values input {
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-left: 15%;
+    width: 55%;
+    font-size: 70%;
+    margin-bottom: 20px;
+    
+}
+
+
+.icons li ion-icon {
+    margin-bottom: 2px;
+    color: white;
+}
+
+.rangeValue {
+    position: absolute;
+    list-style: none;
+    border-radius: 10px;
+    color: white;
+    margin-top: -172px;
+    margin-left: 327px;
+    font-size: 80%;
+    width: 4%;
+}

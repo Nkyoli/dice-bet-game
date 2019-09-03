@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<!-- Meta tags  -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+<!-- Links   -->
+        <link rel="stylesheet" type="text/css" href="../resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="../vendors/css/animate.css">
+
+    </head>
+    
+    <body>
+        <header class="animated fadeInDown">
+            <h1>dice bet game</h1>
+        </header>
+        <section class="sectionContent animated fadeInDown">
+            <a href="play.html"><ion-icon name="ios-play"></ion-icon>new game</a>
+            <a href="#settings" class="js-settingBtn"><ion-icon name="ios-settings"></ion-icon>settings</a>
+        </section>
+        
+        <footer class="footerContent animated fadeInUp">
+            <div class="footerContentLinksSocials">
+                <div class="footerContentLinks">
+                    <ul class="linkLogo">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">IOS app</a></li>
+                        <li><a href="#">Android app</a></li>
+                    </ul>
+                </div>
+                <div class="footerContentSocials">
+                    <ul class="linkLogo">
+                        <li><ion-icon name="logo-facebook"></ion-icon></li>
+                        <li><ion-icon name="logo-twitter"></ion-icon></li>
+                        <li><ion-icon name="logo-instagram"></ion-icon></li>
+                        <li><ion-icon name="logo-googleplus"></ion-icon></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footerContentParagraph">
+                <p> copyright 2019 &copy; Lionel Youmbi all right reserved.</p>
+            </div>
+        </footer>
+        
+        <div class="settings animated zoomOut js-settings">
+            <button class="cancel js-cancel"><a href="#">Cancel</a></button>
+            <button class="done js-done"><a href="#">Done</a></button>
+            <hr>
+            <div class="settingElements">
+               <ul class="icons">
+                    <li><ion-icon name="cash"></ion-icon></li>
+                    <li><ion-icon name="contact"></ion-icon></li>
+                    <li><ion-icon name="contact"></ion-icon></li>
+                </ul>
+                <ul class="values">
+                    <li>
+                        <input type="range" id="rangeValue" min="50" max="500" value="100" step="50" oninput="rangeValueDispl.value = rangeValue.value">
+                    </li>
+                    <li><input type="text" maxlength="10" placeholder=" Player 1" class="js-player1-name"></li>
+                    <li><input type="text" maxlength="10" placeholder=" Player 2" class="js-player2-name"></li>
+                </ul>
+                <ul class="rangeValue">
+                    <li><output id="rangeValueDispl" class="js-rangeValueDispl">100</output></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Script -->
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="../vendors/js/jquery.cookie.js"></script>
+        <script src="../resources/js/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto;
+    width: auto;
+    margin: auto;
+    font-size: 30px;
+    background-image: url("img/background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.content {
+    width: 1140px;
+    height: auto;
+    margin: auto;
+    text-align: center;
+}
+
+.contentPlayer-1,
+.contentPlayer-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    color: white;
+    width: 24%;
+    height: auto;
+    float: left;
+    margin: 20px 10px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.contentPlayerName-1, 
+.contentPlayerName-2 {
+    text-transform: capitalize;
+    width: 200px;
+    height: 50px;
+    margin: 20px auto;
+    padding-top: 5px;
+    text-shadow: 0 5px 10px #e3301e;
+    font-weight: 100;
+    border-radius: 100px;
+} 
+
+.contentPlayerMoney-1,
+.contentPlayerMoney-2 {
+    width: 90px;
+    height: 90px;
+    margin: 20px auto;
+    padding-top: 27px;
+    border: 1px solid red;
+    font-weight: 100;
+    color: red;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.contentPlayerBets {
+    border: 2px solid red;
+    border-radius: 20px;
+    width: 90%;
+    height: 200px;
+    margin: 5% auto;
+    background-color: #d7d7d7;
+    display: block;
+}
+
+.bets-1,
+.bets-2 {
+    margin: 20px auto;
+    list-style: none;
+}
+
+.bets-1 li,
+.bets-2 li {
+    padding-top: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 60%;
+    background-color: red;
+    margin: 5px 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bets-1 li:hover,
+.bets-1 li:active,
+.bets-2 li:hover,
+.bets-2 li:active {
+    color: red;
+    border: 1px solid red;
+    font-size: 60%;
+    background-color: white;
+}
+
+.contentGameStat {
+    border-radius: 20px;
+    float: left;
+    width: 48%;
+    height: auto;
+}
+
+.btn button, 
+.btn a {
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    text-shadow: 0 5px 10px #e3301e;
+    box-shadow: 5px 5px 10px red;
+    color: white;
+    border: 2px solid white;
+    border-radius: 100px;
+    background-color: transparent;
+    font-weight: 200;
+    font-size: 70%;
+    width: 200px;
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px 0;
+}
+
+.btn button {
+    box-shadow: none;
+}
+
+.btnOther {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+}
+
+/*.btn button:hover,
+.btn button:active,*/
+.btn a:hover,
+.btn a:active {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+    color: red;
+    border: 1px solid red;
+    background-color: white;
+}
+
+.dices {
+    margin-bottom: 24%;
+    border-radius: 20px;
+    border: 2px solid white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)); 
+}
+
+.dices img {
+    width: 20%;
+    height: auto;
+    display: inline-block;
+    margin: 20px 50px;
+    border-radius: 23px;
+}
+
+.newGame,
+.quit {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 20px;
+    border: 2px solid white;
+    box-shadow: 0 10px 20px white;
+    background-image: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .9));
+    width: 400px;
+    height: 280px;
+    margin: auto;
+    text-align: center;
+}
+
+.newGame p, 
+.quit p {
+    color: white;
+    font-size: 110%;
+    padding: 15%;
+}
+
+.no,
+.yes,
+.yesQuit {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 100px;
+    color: white;
+    width: 20%;
+    margin: 20px auto;
+    padding: 5px;
+}
+
+.no {
+    margin-right: 140px;
+}
+
+.no a,
+.yes a,
+.yesQuit a {
+    text-decoration: none;
+    text-shadow: 0 2px 5px red;
+    font-size: 200%;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+}
+
+.no:hover,
+.yes:hover,
+.yesQuit:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+    border: 1px solid red;
+    background-color: white;
+}
+
+.no a:hover,
+.yes a:hover,
+.yesQuit a:hover {
+    color: red;
+}
+
+.winnerPlayer1,
+.winnerPlayer2 {
+    display: none;
+    position: absolute;
+    top: 5%;
+    left: 0;
+    right: 0;
+    left: 0;
+    font-size: 220%;
+    text-shadow: 0 10px 15px red;
+}
+
+.drawGame p{
+    display: none;
+    position: absolute;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    color: white;
+    font-size: 200%;
+    width: 100%;
+    height: 32%;
+    text-shadow: 0 10px 20px red;
+    border-radius: 20px;
+    border: 2px solid white;
+    padding-top: 8%;
+    margin-top: 28%;
+}
+
+.betValue {
+    margin: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.betValue p {
+    font-size: 200%;
+    background-color: red;
+    color: white;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 4%;
+    text-shadow: 0 10px 15px red;
+}
