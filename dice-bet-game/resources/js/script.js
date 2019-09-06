@@ -113,16 +113,16 @@ $(document).ready(function() {
         $(".js-maxBetUpdate1").text("$" + player1.maxBet);
         $(".js-maxBetUpdate2").text("$" + player2.maxBet);
         checkWinner(player1, player2);
-        hiddenBets(".js-10dollars-player1",
-                   ".js-15dollars-player1",
-                   ".js-20dollars-player1",
-                   ".js-25dollars-player1",
-                   ".js-30dollars-player1",
-                   ".js-10dollars-player2",
-                   ".js-15dollars-player2",
-                   ".js-20dollars-player2",
-                   ".js-25dollars-player2",
-                   ".js-30dollars-player2");
+        hiddenBets(".js-10dollars-1",
+                   ".js-15dollars-1",
+                   ".js-20dollars-1",
+                   ".js-25dollars-1",
+                   ".js-30dollars-1",
+                   ".js-10dollars-2",
+                   ".js-15dollars-2",
+                   ".js-20dollars-2",
+                   ".js-25dollars-2",
+                   ".js-30dollars-2");
     });
     $(".js-rollDicesPlayer2").click(function(){
         rollDices(player2, player1);
@@ -130,16 +130,16 @@ $(document).ready(function() {
         $(".js-maxBetUpdate1").text("$" + player1.maxBet);
         $(".js-maxBetUpdate2").text("$" + player2.maxBet);
         checkWinner(player1, player2);
-        hiddenBets(".js-10dollars-player1",
-                   ".js-15dollars-player1",
-                   ".js-20dollars-player1",
-                   ".js-25dollars-player1",
-                   ".js-30dollars-player1",
-                   ".js-10dollars-player2",
-                   ".js-15dollars-player2",
-                   ".js-20dollars-player2",
-                   ".js-25dollars-player2",
-                   ".js-30dollars-player2");
+        hiddenBets(".js-10dollars-1",
+                   ".js-15dollars-1",
+                   ".js-20dollars-1",
+                   ".js-25dollars-1",
+                   ".js-30dollars-1",
+                   ".js-10dollars-2",
+                   ".js-15dollars-2",
+                   ".js-20dollars-2",
+                   ".js-25dollars-2",
+                   ".js-30dollars-2");
     });
     
     $(".js-5dollars-player1").click(function(){
@@ -225,7 +225,7 @@ $(document).ready(function() {
     function betAmount(element, player) {
         
         if(player.isChoosingBet) {
-            playerBet = $(element).val();
+            playerBet = parseInt($(element).text());
             $(".js-betValue p").text("$" + playerBet);
             player.isPlaying = true;
             player1.currentBet = playerBet;
@@ -270,6 +270,7 @@ $(document).ready(function() {
                 $(player1.rollDicesBtn).css("box-shadow", "0 5px 40px white");
             } else {
                 $(player1.betsBox).css("box-shadow", "0 5px 40px white");
+                $(player1.rollDicesBtn).css("box-shadow", "none");
             }
             
         } else {

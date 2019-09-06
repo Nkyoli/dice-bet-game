@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <title>Bet Dices Game</title>
 <!-- Meta tags  -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,10 +16,10 @@
         <header class="animated fadeInDown">
             <h1>dice bet game</h1>
         </header>
-        <section class="sectionContent animated fadeInDown">
+        <div class="content animated fadeInDown">
             <a href="play.html"><ion-icon name="ios-play"></ion-icon>new game</a>
             <a href="#settings" class="js-settingBtn"><ion-icon name="ios-settings"></ion-icon>settings</a>
-        </section>
+        </div>
         
         <footer class="footerContent animated fadeInUp">
             <div class="footerContentLinksSocials">
@@ -45,8 +46,10 @@
         </footer>
         
         <div class="settings animated zoomOut js-settings">
-            <button class="cancel js-cancel"><a href="#">Cancel</a></button>
-            <button class="done js-done"><a href="#">Done</a></button>
+            <div class="settingsBtn">
+                <a href="#" class="cancel js-cancel">Cancel</a>
+                <a href="#" class="done js-done">Done</a>
+            </div>
             <hr>
             <div class="settingElements">
                <ul class="icons">

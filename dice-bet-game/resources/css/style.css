@@ -34,8 +34,8 @@ header h1 {
     font-size: 210%;
 }
 
-.sectionContent a:link,
-.sectionContent a:visited {
+.content a:link,
+.content a:visited {
     display: block;
     text-decoration: none;
     text-transform: uppercase;
@@ -52,17 +52,17 @@ header h1 {
     padding: 10px;
 }
 
-.sectionContent a ion-icon {
+.content a ion-icon {
     font-size: 120%;
     float: left;
 }
 
-.sectionContent a:hover,
-.sectionContent a:active {
+.content a:hover,
+.content a:active {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
     color: red;
     border: 2px solid red;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 footer {
@@ -112,35 +112,31 @@ footer {
 }
 
 hr {
-    font-size: 2px;
+    margin-top: 5%;
     color: white;
 }
 
+.settingsBtn {
+    margin: 3% 0;
+}
 .cancel,
 .done {
     background-color: transparent;
-    border: 1px solid white;
-    border-radius: 100px;
-    color: white;
-    width: 100px;
-    margin: 10px auto;
-    padding: 5px;
-}
-
-.cancel a,
-.done a {
     text-decoration: none;
     text-shadow: 0 2px 5px red;
     text-transform: uppercase;
-    font-size: 140%;
-    font-weight: 100;
-    color: white;
+    font-size: 70%;
+    font-weight: 200;
     text-align: center;
+    border: 1px solid white;
+    border-radius: 100px;
+    color: white;
+    width: 15%;
+    padding: 2%;
 }
 
 .done {
     margin-left: 40%;
-    margin-top: 7%;
 }
 .cancel {
     margin-left: 4%;
@@ -150,11 +146,11 @@ hr {
 .cancel:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
     border: 1px solid red;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
-.done a:hover,
-.cancel a:hover {
+.done:hover,
+.cancel:hover {
     color: red;
 }
 

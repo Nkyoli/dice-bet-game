@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <title>Bet Dice Game</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -17,14 +18,14 @@
                 <div class="winnerPlayer1 js-winnerPlayer1">WINNER</div>
                 <div class="contentPlayerBets js-contentPlayerBets-player1">
                     <ul class="bets-1">
-                        <li class="js-5dollars-player1" value="5">$5&nbsp;</li>
-                        <li class="js-10dollars-player1" value="10">$10</li>
-                        <li class="js-15dollars-player1" value="15">$15</li>
+                        <li class="js-5dollars-1">$<span class="js-5dollars-player1">5</span>&nbsp;</li>
+                        <li class="js-10dollars-1">$<span  class="js-10dollars-player1">10</span></li>
+                        <li class="js-15dollars-1">$<span  class="js-15dollars-player1">15</span></li>
                     </ul>
                     <ul class="bets-2">
-                        <li class="js-20dollars-player1" value="20">$20</li>
-                        <li class="js-25dollars-player1" value="25">$25</li>
-                        <li class="js-30dollars-player1" value="30">$30</li>
+                        <li class="js-20dollars-1">$<span class="js-20dollars-player1">20</span></li>
+                        <li class="js-25dollars-1">$<span  class="js-25dollars-player1">25</span></li>
+                        <li class="js-30dollars-1">$<span  class="js-30dollars-player1">30</span></li>
                     </ul>
                 </div>
                 <div class="btn">
@@ -52,14 +53,14 @@
                 <div class="winnerPlayer2 js-winnerPlayer2">WINNER</div>
                 <div class="contentPlayerBets js-contentPlayerBets-player2">
                    <ul class="bets-1">
-                        <li class="js-5dollars-player2" value="5">$5&nbsp;</li>
-                        <li class="js-10dollars-player2" value="10">$10</li>
-                        <li class="js-15dollars-player2" value="15">$15</li>
+                        <li class="js-5dollars-2">$<span class="js-5dollars-player2">5</span>&nbsp;</li>
+                        <li class="js-10dollars-2">$<span  class="js-10dollars-player2">10</span></li>
+                        <li class="js-15dollars-2">$<span  class="js-15dollars-player2">15</span></li>
                     </ul>
                     <ul class="bets-2">
-                        <li class="js-20dollars-player2" value="20">$20</li>
-                        <li class="js-25dollars-player2" value="25">$25</li>
-                        <li class="js-30dollars-player2" value="30">$30</li>
+                        <li class="js-20dollars-2">$<span class="js-20dollars-player2">20</span></li>
+                        <li class="js-25dollars-2">$<span  class="js-25dollars-player2">25</span></li>
+                        <li class="js-30dollars-2">$<span  class="js-30dollars-player2">30</span></li>
                     </ul>
                 </div>
                 <div class="btn">
@@ -71,15 +72,19 @@
         <div class="newGame js-newGameAlert animated zoomOut">
             <p>Do you want to restart a new Game?</p>
             <hr>
-            <button class="no js-no"><a href="#">NO</a></button>
-            <button class="yes js-yes"><a href="play.html">YES</a></button>
+            <div class="yesNo">
+                <a href="#" class="no js-no">NO</a>
+                <a href="play.html" class="yes js-yes">YES</a>
+            </div>
         </div>
         
         <div class="quit js-quitDiv animated zoomOut">
             <p>Do you want to quit Game?</p>
             <hr>
-            <button class="no js-noQuit"><a href="#">NO</a></button>
-            <button class="yesQuit js-yesQuit"><a href="index.html">YES</a></button>
+            <div class="yesNo">
+                <a href="#" class="no js-noQuit">NO</a>
+                <a href="index.html" class="yesQuit js-yesQuit">YES</a>
+            </div>
         </div>
         
         <!-- Script -->
