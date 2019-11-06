@@ -60,7 +60,8 @@ body {
     border-radius: 50%;
 }
 
-.contentPlayerBets {
+.contentPlayerBets-1,
+.contentPlayerBets-2 {
     border: 2px solid red;
     border-radius: 20px;
     width: 90%;
@@ -84,7 +85,7 @@ body {
     width: 60px;
     height: 60px;
     font-size: 60%;
-    background-color: red;
+    background-color: rgb(255, 30, 0);
     margin: 5px 5px;
     display: inline-block;
     cursor: pointer;
@@ -223,8 +224,8 @@ body {
     margin: 5% 0;
 }
 
-.winnerPlayer1,
-.winnerPlayer2 {
+.winnerPlayer-1,
+.winnerPlayer-2 {
     display: none;
     position: absolute;
     top: 5%;

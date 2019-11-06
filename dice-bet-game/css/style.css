@@ -119,8 +119,8 @@ hr {
 .settingsBtn {
     margin: 3% 0;
 }
-.cancel,
-.done {
+#cancel,
+#done {
     background-color: transparent;
     text-decoration: none;
     text-shadow: 0 2px 5px red;
@@ -135,22 +135,22 @@ hr {
     padding: 2%;
 }
 
-.done {
+#done {
     margin-left: 40%;
 }
-.cancel {
+#cancel {
     margin-left: 4%;
 }
 
-.done:hover,
-.cancel:hover {
+#done:hover,
+#cancel:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
     border: 1px solid red;
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-.done:hover,
-.cancel:hover {
+#done:hover,
+#cancel:hover {
     color: red;
 }
 

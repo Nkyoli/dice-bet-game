@@ -7,9 +7,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
 <!-- Links   -->
-        <link rel="stylesheet" type="text/css" href="../resources/css/style.css">
-        <link rel="stylesheet" type="text/css" href="../vendors/css/animate.css">
-
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <link rel="stylesheet" type="text/css" href="./css/animate.css">
     </head>
     
     <body>
@@ -18,7 +17,7 @@
         </header>
         <div class="content animated fadeInDown">
             <a href="play.html"><ion-icon name="ios-play"></ion-icon>new game</a>
-            <a href="#settings" class="js-settingBtn"><ion-icon name="ios-settings"></ion-icon>settings</a>
+            <a href="#settings" id="settings-btn"><ion-icon name="ios-settings"></ion-icon>settings</a>
         </div>
         
         <footer class="footerContent animated fadeInUp">
@@ -45,10 +44,10 @@
             </div>
         </footer>
         
-        <div class="settings animated zoomOut js-settings">
+        <div class="settings animated zoomOut">
             <div class="settingsBtn">
-                <a href="#" class="cancel js-cancel">Cancel</a>
-                <a href="#" class="done js-done">Done</a>
+                <a href="#" id="cancel">Cancel</a>
+                <a href="#" id="done">Done</a>
             </div>
             <hr>
             <div class="settingElements">
@@ -61,19 +60,17 @@
                     <li>
                         <input type="range" id="rangeValue" min="50" max="500" value="100" step="50" oninput="rangeValueDispl.value = rangeValue.value">
                     </li>
-                    <li><input type="text" maxlength="10" placeholder=" Player 1" class="js-player1-name"></li>
-                    <li><input type="text" maxlength="10" placeholder=" Player 2" class="js-player2-name"></li>
+                    <li><input id="player-1-name" type="text" maxlength="10" placeholder=" Player 1"></li>
+                    <li><input id="player-2-name" type="text" maxlength="10" placeholder=" Player 2"></li>
                 </ul>
                 <ul class="rangeValue">
-                    <li><output id="rangeValueDispl" class="js-rangeValueDispl">100</output></li>
+                    <li><output id="rangeValueDispl">100</output></li>
                 </ul>
             </div>
         </div>
 
         <!-- Script -->
         <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="../vendors/js/jquery.cookie.js"></script>
-        <script src="../resources/js/script.js"></script>
+        <script src="./js/scriptIndex.js"></script>
     </body>
 </html>

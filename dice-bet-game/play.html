@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bet Dice Game</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="./css/style-play.css">
+        <link rel="stylesheet" type="text/css" href="./css/animate.css">
+        
+    </head>
+        
+    <body>
+        <div class="content">
+            <div class="contentPlayer-1 animated fadeInLeft">
+                <div class="contentPlayerName-1">Player 1</div>
+                <div class="contentPlayerMoney-1">$100</div>
+                <div class="winnerPlayer-1 animated fadeInDown">WINNER</div>
+                <div class="contentPlayerBets-1">
+                    <ul class="bets-1">
+                        <li class="bet-1">$<span>5</span>&nbsp;</li>
+                        <li class="bet-2">$<span>10</span></li>
+                        <li class="bet-3">$<span>15</span></li>
+                        <li class="bet-4">$<span>20</span></li>
+                        <li class="bet-5">$<span>25</span></li>
+                        <li class="bet-6">$<span>30</span></li>
+                    </ul>
+                </div>
+                <div class="btn">
+                    <button><ion-icon name="logo-game-controller-b"></ion-icon> Roll Dices</button>
+                </div>
+            </div>
+            <div class="contentGameStat animated fadeInDown">
+                <div class="drawGame">
+                    <p class="animated fadeInDown">DRAW GAME</p>
+                </div>
+                <div class="betValue"><p>$0</p></div>
+                <div class="dices">
+                    <img id="dice-1" src="./img/1.jpg" alt="dice 1">
+                    <img id="dice-2" src="./img/2.jpg" alt="dice 2">
+                </div>
+                
+                <div class="btn">
+                    <a href="#newGame" class="btnOther newGameBtn"><ion-icon name="ios-play"></ion-icon>New Game</a>
+                    <a href="#quit" class="btnOther quitBtn"><ion-icon name="ios-walk"></ion-icon>Quit</a>
+                </div>
+            </div>
+            <div class="contentPlayer-2 animated fadeInRight">
+                <div class="contentPlayerName-2">Player 2</div>
+                <div class="contentPlayerMoney-2">$100</div>
+                <div class="winnerPlayer-2 animated fadeInDown">WINNER</div>
+                <div class="contentPlayerBets-2">
+                    <ul class="bets-2">
+                        <li class="bet-1">$<span>5</span>&nbsp;</li>
+                        <li class="bet-2">$<span>10</span></li>
+                        <li class="bet-3">$<span>15</span></li>
+                        <li class="bet-4">$<span>20</span></li>
+                        <li class="bet-5">$<span>25</span></li>
+                        <li class="bet-6">$<span>30</span></li>
+                    </ul>
+                </div>
+                <div class="btn">
+                    <button><ion-icon name="logo-game-controller-b"></ion-icon> Roll Dices</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="newGame animated zoomOut">
+            <p>Do you want to restart a new Game?</p>
+            <hr>
+            <div class="yesNo">
+                <a href="#" class="no noNewGame">NO</a>
+                <a href="play.html" class="yes">YES</a>
+            </div>
+        </div>
+        
+        <div class="quit animated zoomOut">
+            <p>Do you want to quit Game?</p>
+            <hr>
+            <div class="yesNo">
+                <a href="#" class="no noQuit">NO</a>
+                <a href="index.html" class="yesQuit">YES</a>
+            </div>
+        </div>
+        
+        <!-- Script -->
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <script src="./js/script.js"></script>
+    </body>
+
+</html>
