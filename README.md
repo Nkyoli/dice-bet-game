@@ -1,7 +1,7 @@
 # dice-bet-game
 Two players game, a player chooses the current bet and the two players roll the 2 dices, the winner of the round is the player with the highest combined number.
 ## Created with: 
-HTML5/CSS3/JavaScript/JQuery
+HTML5/CSS3/JavaScript
 
 ## Welcome-page:
 ![Welcome Page](https://github.com/Nkyoli/dice-bet-game/blob/master/img/welcomePage.PNG)
