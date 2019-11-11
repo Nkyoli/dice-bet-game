@@ -16,7 +16,7 @@ Players can set the maximum amount of money that each of them will have during t
 ![Play](https://github.com/Nkyoli/dice-bet-game/blob/master/img/game.PNG)
 
 ## Bet Controller:
-If a player total money is less than a bet, the button corresponding to the bet will disappear on both players choice and vice-versa.
+Players cannot bet higher than the smallest player money.
 ![Bet Controller](https://github.com/Nkyoli/dice-bet-game/blob/master/img/betController.PNG)
 
 ## New Game / Quit
